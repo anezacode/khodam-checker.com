@@ -27,6 +27,8 @@ body.body {
     color: white;
     text-align: center;
     font-family: poppins;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 
 div.content {
@@ -80,6 +82,7 @@ div.content p {
 span.hasil {
     color: white;
     animation: rgb 1s none infinite;
+    font-weight: bold;
 }
 
 @keyframes rgb {
