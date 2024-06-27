@@ -1,0 +1,114 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    zoom: 1;
+}
+
+::selection {
+    background-color: gray;
+}
+
+a, input, br {
+    user-select: none;
+}
+
+a {
+    color: gray;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url('Poppins-Regular.ttf');
+}
+
+body.body {
+    background-color: rgb(25,25,25);
+    color: white;
+    text-align: center;
+    font-family: poppins;
+}
+
+div.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.content h1, h6 {
+    margin: 10px;
+}
+
+input.nama {
+    text-align: center;
+    background-color: rgb(36,36,36);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 10px 50px 10px 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: medium;
+    font-family: poppins;
+}
+
+input.check {
+    background-color: rgb(75,75,75);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 136px 10px 136px;
+    font-size: medium;
+    font-family: poppins;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+input.check:hover {
+    background-color: rgb(100,100,100);
+}
+
+input.check:active {
+    background-color: rgb(50,50,50);
+}
+
+div.content p {
+    margin: 10px;
+}
+
+span.hasil {
+    color: white;
+    animation: rgb 1s none infinite;
+}
+
+@keyframes rgb {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: limegreen;
+    }
+
+    75% {
+        color: lightblue
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+div.content h6 {
+    position: relative;
+    top: 100px;
+}
+
+div.content h6::after {
+    content: " | v1.0";
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khodam Checker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="body">
+    <div class="content">
+        <h1>Khodam Checker</h1>
+        <p>
+            Khodamku: <span class="hasil" id="hasil"></span>
+        </p>
+        <form action="#">
+            <input type="text" id="nama" class="nama" maxlength="50" placeholder="Masukkan Nama" required/><br/>
+            <input type="submit" id="check" class="check" value="Cek" onclick="khodamChecker()" /><br />
+        </form>
+        <a id="reload" href="javascript:location.reload()">Retry</a>
+        <h6>Ⓒ 2024 AnezaCode</h6>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
