@@ -46,12 +46,11 @@ input.nama {
     color: white;
     border: 1px solid gray;
     border-radius: 20px;
-    padding: 10px 50px 10px 50px;
+    padding: 10px;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: medium;
-    margin-left: 10vh;
-    margin-right: 10vh;
     font-family: poppins;
 }
 
@@ -60,13 +59,12 @@ input.check {
     color: white;
     border: none;
     border-radius: 20px;
-    padding: 10px 136px 10px 136px;
+    padding: 10px;
+    width: 100%;
     font-size: medium;
     font-family: poppins;
     cursor: pointer;
     margin-bottom: 10px;
-    margin-left: 10vh;
-    margin-right: 10vh;
 }
 
 input.check:hover {
@@ -111,9 +109,5 @@ span.hasil {
 
 div.content h6 {
     position: relative;
-    top: 100px;
-}
-
-div.content h6::after {
-    content: " | v1.0";
+    top: 250px;
 }
