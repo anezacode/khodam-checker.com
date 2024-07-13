@@ -34,11 +34,23 @@ div.content {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 40%;
+}
+
+@media screen and (max-width: 1024px) {
+    div.content {
+        width: 80%;
+    }
 }
 
 div.content h1, h6 {
     margin: 10px;
+}
+
+p.info {
+    background-color: rgb(20,20,20);
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 
 input.nama {
@@ -48,31 +60,30 @@ input.nama {
     border: 1px solid gray;
     border-radius: 20px;
     padding: 10px;
-    width: 100%;
+    width: 300px;
     margin-top: 10px;
-    margin-bottom: 10px;
     font-size: medium;
     font-family: poppins;
 }
 
-input.check {
+input.check, button.reload {
     background-color: rgb(75,75,75);
     color: white;
     border: none;
     border-radius: 20px;
     padding: 10px;
-    width: 100%;
+    margin-top: 5px;
+    width: 300px;
     font-size: medium;
     font-family: poppins;
     cursor: pointer;
-    margin-bottom: 10px;
 }
 
-input.check:hover {
+input.check:hover, button.reload:hover {
     background-color: rgb(100,100,100);
 }
 
-input.check:active {
+input.check:active, button.reload:active {
     background-color: rgb(50,50,50);
 }
 
@@ -84,6 +95,7 @@ span.hasil {
     color: white;
     animation: rgb 1s none infinite;
     font-weight: bold;
+    font-size: x-large;
 }
 
 @keyframes rgb {
@@ -110,5 +122,5 @@ span.hasil {
 
 div.content h6 {
     position: relative;
-    top: 250px;
+    top: 36vh;
 }
