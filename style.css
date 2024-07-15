@@ -121,7 +121,7 @@ span.hasil {
     }
 }
 
-div.content h6 {
+h6.tribute {
     position: relative;
-    top: 36vh;
+    top: 96vh;
 }
