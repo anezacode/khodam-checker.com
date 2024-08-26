@@ -2,9 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    zoom: 1;
+    zoom: 0.95;
+    transition: 0.2s;
 }
-
 ::selection {
     background-color: gray;
 }
@@ -29,16 +29,16 @@ div.content {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40%;
+    max-width: 40%;
 }
 
 @media screen and (max-width: 1024px) {
     div.content {
-        width: 80%;
+        max-width: 80%;
     }
 }
 
-div.content h1, h6 {
+div.content h6 {
     margin: 5px;
 }
 
@@ -121,6 +121,8 @@ span.hasil {
 }
 
 h6.tribute {
-    position: relative;
-    top: 96vh;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
