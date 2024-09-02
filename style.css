@@ -6,11 +6,12 @@
     transition: 0.2s;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     *, html {
-        zoom: 0.95s;
+        zoom: 0.96;
     }
 }
+
 ::selection {
     background-color: gray;
 }
